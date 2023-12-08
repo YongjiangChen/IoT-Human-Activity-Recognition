@@ -22,8 +22,8 @@ This project presents a Human Activity Recognition system using wearable sensors
 - **Integration**: Please see the report for a detailed description of how the sensors, machine learning models, and mobile application are integrated to form a complete end-to-end system and a step-by-step guide to setting up and using the system.
 
 ## Contributors
-John Chen 
-Sean Strain 
-Szymon Ciciala 
+- John Chen
+- Sean Strain
+- Szymon Ciciala
 
 
