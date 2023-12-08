@@ -1,0 +1,35 @@
+<resources>
+    <!-- light theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">@color/light_main_background</item>
+        <item name="secondary_background_color">@color/light_secondary_background</item>
+        <item name="text_color">@color/black</item>
+        <item name="button_color">@color/colorPrimary</item>
+    </style>
+
+    <!-- dark theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#101D42</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background_color">#131313</item>
+        <item name="secondary_background_color">@color/dark_secondary_background</item>
+        <item name="text_color">#ffff</item>
+        <item name="button_color">#ffff</item>
+    </style>
+
+    <style name="selector">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:translationZ">1dp</item>
+        <item name="android:background">@drawable/primary_round</item>
+    </style>
+
+</resources>

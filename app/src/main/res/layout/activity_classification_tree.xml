@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/background_color"
+    android:id="@+id/drawer_layout"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="uiMode">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".live.ClassifyActivity">
+
+        <LinearLayout
+            android:id="@+id/respeck_graphs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/thingy_graphs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respeck Live Data using tree Method" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/respeck_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thingy_graphs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/respeck_graphs">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thingy Live Data using tree method" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/thingy_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/respeck_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Thingy Classification:'
+            app:layout_constraintBottom_toTopOf="@+id/thingy_graphs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/respeck_graphs"
+            app:layout_constraintVertical_bias="0.345" />
+
+        <TextView
+            android:id="@+id/thingy_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Respeck Classification:'
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thingy_graphs"
+            app:layout_constraintVertical_bias="0.181" />
+
+        <TextView
+            android:id="@+id/combined_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Combined Classification:'
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thingy_graphs"
+            app:layout_constraintVertical_bias="0.709" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="10dp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:elevation="10dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <ListView
+    android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/background_color"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp" >
+
+    </ListView>
+</androidx.drawerlayout.widget.DrawerLayout>
