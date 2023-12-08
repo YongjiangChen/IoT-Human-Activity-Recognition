@@ -5,6 +5,8 @@ This project presents a Human Activity Recognition system using wearable sensors
 
 ## Technologies
 - **Wearable Sensors**: Inertial Motion Unit (IMU) sensors including accelerometers and gyroscopes for data collection.
+- the **Respeck** sensor, worn on the lower left ribcage, sampling accelerometer and gyroscope data at 25Hz
+- the **Thingy:52** sensor, worn in the front right pocket of your trousers, sampling accelerometer, gyroscope and magnetometer data at 25Hz
 - **Machine Learning**: Deep learning models, especially Convolutional Neural Networks (CNNs), for activity classification.
 - **Mobile Application**: Android app for displaying classified activities in real-time.
 
